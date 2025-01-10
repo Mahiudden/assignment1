@@ -1,7 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
-h1{
+body{
+    background-color: #F1F1F3;
+}
+nav .navbar{
+    display: flex;
+    margin: 10px 180px;
+    justify-content: space-between;
+}
+.navbar h4{
+    font-size: 32px;
+    color: #0E0E0E;
+    font-family: "Fira Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+}
+.navbar button{
+    border-radius: 8px;
+    border: 1px #006A50 solid;
+    color: #006A50;
+    font-family: "Fira Sans", serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 30px;
+    cursor: pointer;
+    background-color: #F5F5F5;
+}
+.navbar button:hover{
+    cursor: pointer;
+    background-color: rgb(219 234 254 / var(--tw-bg-opacity, 1));
     color: black;
 }
+.banner{
+    display: flex;
+    margin: 80px 180px;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* text-align: center; */
+    background-color: #C6E4D6;
+    padding: 80px 100px;
+    border-radius: 24px;
+}
+.banner .banner-main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.banner-main p{
+    font-family: "Fira Sans", serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #0E0E0E80;
+}
+.banner-main h3{
+    font-family: "Fira Sans", serif;
+    font-size: 56px;
+    color: #0E0E0E;
+    font-weight: 700;
+}
+.banner .banner-btn button{
+    font-family: "Fira Sans", serif;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 8px;
+    background-color: #006A50;
+    padding: 17px 34px;
+    border: none;
+    cursor: pointer;
+}
+.banner .banner-btn button:hover{
+    cursor: pointer;
+    background-color: rgb(219 234 254 / var(--tw-bg-opacity, 1));
+    color: black;
+}
+.fast-card-main{
+    margin: 0px 180px;
+}
+.fast-card-main .card-main h3{
+    font-family: "Fira Sans", serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #0E0E0E;
+}
+.card-div{
+    margin-top: 32px;
+    display: flex;
+    gap: 30px;
+}
+.card{
+    padding: 24px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: 1px #0E0E0E26 solid;
+    border-radius: 16px;
+    width: 320px;
+    height: 240px;
+}
+.card h4{
+    font-family: "Fira Sans", serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+.card p{
+    margin-top: 22px;
+    font-family: "Fira Sans", serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #0E0E0EB2;
+}
+.sec-card-main{
+    padding: 80px 180px 0px 180px ;
+}
+.sec-card-main .sec-card-div{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.sec-card-div h3{
+    font-size: 40px;
+    font-family: "Fira Sans", serif;
+    width: 700;
+}
+.sec-card-div .sec-p{
+    font-size: 16px;
+    font-family: "Fira Sans", serif;
+    width: 400;
+    color: #0E0E0EB2;
+}
+.sec-card-div .sec-card-main-dev{
+    display: flex;
+    gap: 24px;
+}
+.sec-card-div .sec-card{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: #5490F533;
+    padding: 32px;
+    border-radius: 16px;
+}
+.sec-card h4{
+    font-family: "Fira Sans", serif;
+    color: #0E0E0ECC;
+    font-weight: 700;
+    font-size: 20px;
+}
+.sec-card P{
+    font-size: 16px;
+    font-weight: 400;
+    color: #0E0E0EB2;
+    font-family: "Fira Sans", serif;
+}
+.sec-card .button button{
+    background-color: #5490F5;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 11px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+.sec-card .button button:hover{
+    cursor: pointer;
+    background-color: rgb(219 234 254 / var(--tw-bg-opacity, 1));
+    color: black;
+}
+.sec-card .b-color button{
+    background-color: #09A15C;
+}
+.sec-card .b-color2 button{
+    background-color: #FFC239;
+}
+.sec-card-div .sec-card-color{
+    background-color: #C6E4D6;
+}
+.sec-card-div .sec-card--color{
+    background-color: #F7EBCF;
+}
+.section{
+    display: flex;
+    justify-content: center;
+}
+.main-text-section{
+    margin: 32px 180px 10px 180px;
+    width: 100%;
+    height: auto;
+    background-color: #FFFFFF;
+    border: 1px solid #0E0E0E26;
+    border-radius: 16px;
+    padding: 48px 24px;
+}
+.text-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    background-image: url(./assets/quote-bg.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+.text-section p{
+    position: relative;
+    color: #0E0E0ECC;
+    font-family: "Fira Sans", serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin-top: 24px;
+}
+.DrYunus h4{
+    margin-top: 20px;
+    font-family: "Fira Sans", serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+.DrYunus p{
+    margin-top: 12px;
+    font-family: "Fira Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+.News-Fast{
+    margin: 60px 180px;
+}
+.News-Fast h3{
+    color: #0E0E0E;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Fira Sans", serif;
+}
+.News-Fast .News-title-text p{
+    margin-top: 18px;
+    color: #0E0E0EB2;
+    font-family: "Fira Sans", serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.News{
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 48px;
+    background-color: #FFFFFF;
+    border-radius: 24px;
+}
+.News .img{
+    border-radius: 24px;
+}
+.News .News-card >p{
+    font-size: 16px;
+    font-family: "Fira Sans", serif;
+    color: #0E0E0EB2;
+    margin-top: 20px;
+}
+.News .News-card .date{
+    display: flex;
+    gap: 16px;
+    font-size: 16px;
+    font-family: "Fira Sans", serif;
+    color: #0E0E0EB2;
+    margin-top: 20px;
+}
+.News .News-Btn{
+    margin-top: 32px;
+}
+.News .News-Btn button{
+    font-family: "Fira Sans", serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    background-color: #006A50;
+    padding: 13px 26px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+.News .News-Btn button:hover{
+    cursor: pointer;
+    background-color: rgb(219 234 254 / var(--tw-bg-opacity, 1));
+    color: black;
+    
+}
+.amount-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+}
+.amount-section h3{
+    font-family: "Fira Sans", serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #0E0E0E;
+}
+.amount-section p{
+    font-family: "Fira Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #0E0E0EB2;
+}
+.number-of-amount{
+    display: flex;
+    gap: 24px;
+}
+.number-of-amount h2{
+    padding: 40px;
+    background-color: #FFFFFF;
+    border: 1px solid #0E0E0E26;
+    border-radius: 16px;
+    font-size: 40px;
+    font-family: "Fira Sans", serif;
+}
+.number-of-amount h2:hover{
+    cursor: pointer;
+    background-color: rgb(219 234 254 / var(--tw-bg-opacity, 1));
+    color: black;
+    
+}
+.number-of-amount .color{
+    background-color: #C6E4D6;
+}
+.amount-section .input input{
+    padding: 20px 40px;
+    width: 832px;
+    height: 44px;
+    background-color: #FFFFFF;
+    border: 1px solid #0E0E0E26;
+    border-radius: 5px;
+} 
+.amount-section .input input::placeholder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #0E0E0E4D;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Fira Sans", serif;
+}
+.amount-section .Done button{
+    background-color: #006A50;
+    padding: 17px 34px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Fira Sans", serif;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+.amount-section .Done button:hover{
+    cursor: pointer;
+    background-color: rgb(219 234 254 / var(--tw-bg-opacity, 1));
+    color: black;
+    
+}
+.Subscribe{
+    margin: 80px 180px;
+    background-color: #C6E4D6;
+    padding: 80px 100px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.Subscribe .Subscribe-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    align-items: center;
+}
+.Subscribe-section h3{
+    color: #0E0E0E;
+    font-size: 40px;
+    font-family: "Fira Sans", serif;
+
+}
+.Subscribe-section p{
+    font-family: "Fira Sans", serif;
+    color: #0E0E0EB2;
+    font-weight: 400;
+    font-size: 16px;
+}
+.Subscribe-section .input{
+    display: flex;
+    gap: 0px;
+}
+.Subscribe-section .input input{
+    padding: 18px 40px;
+    width: 550px;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border: none;
+}
+.Subscribe-section .input input::placeholder{
+    font-family: "Fira Sans", serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #0E0E0E4D;
+}
+.Subscribe-section .input button{
+    padding: 17px 34px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: none;
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: #006A50;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Fira Sans", serif;
+}
+.Subscribe-section .input button:hover{
+    cursor: pointer;
+    background-color: rgb(219 234 254 / var(--tw-bg-opacity, 1));
+    color: black;
+}
+.last-div{
+    margin: 50px 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+.last-div .Bangladesh{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+.last-div h3{
+    color: #0E0E0E;
+    display: inline;
+    font-family: "Fira Sans", serif;
+    font-weight: 700;
+    font-size: 32px;
+}
+.last-div .image{
+    margin-top: 32px;
+    display: flex;
+    gap: 23px;
+    justify-content: center;
+}
+/* button:hover{
+    cursor: pointer;
+    background-color: rgb(219 234 254 / var(--tw-bg-opacity, 1));
+    color: black;
+} */
